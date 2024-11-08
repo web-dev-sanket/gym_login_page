@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset*/
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/b.jpg.jpg')no-repeat center center/cover;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red;*/
+        position: absolute;
+        left: 46px;
+        top: 24px;
+    }
+
+    .left img {
+        width: 48px;
+
+    }
+
+    .left div {
+        line-height: 21px;
+        font-size: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 37%;
+        margin: 16px auto;
+        /* border: 2px solid rgb(0, 255, 47);*/
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid rgba(104, 9, 220, 0.941);*/
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 10px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 4px 9px;
+        background-color: black;
+        color: white;
+        padding: 0px 0px;
+        border: 2px solid grey;
+        border-radius: 7px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(119, 115, 111);
+    }
+
+    .container {
+        border: 2px solid rgb(241, 241, 246);
+        margin: 66px 53px;
+        padding: 12px 80px;
+        width: 24%;
+        border-radius: 19px;
+    }
+
+    .container h1 {
+        text-align: center;
+
+    }
+
+    .container button {
+        display: block;
+        width: 84px;
+        margin: 20px auto;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 265px;
+        padding: 7px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/logo.png.png" alt="">
+            <div>Sanket Fitness</div>
+        </div>
+        <!--mid box for navigation-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile No.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
